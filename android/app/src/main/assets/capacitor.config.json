@@ -1,0 +1,14 @@
+{
+	"appId": "com.harvy.tvremote",
+	"appName": "Harvy TV Remote",
+	"webDir": "dist",
+	"server": {
+		"androidScheme": "https",
+		"cleartext": true
+	},
+	"plugins": {
+		"CapacitorHttp": {
+			"enabled": true
+		}
+	}
+}

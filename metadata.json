@@ -1,0 +1,6 @@
+{
+  "name": "Harvy TV Remote",
+  "description": "An ad-free universal smart TV remote with personalized app shortcuts, priority ordering, tactile feedback, and voice-to-text typing for TCL, Samsung, LG, Sony, Xiaomi, and more.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

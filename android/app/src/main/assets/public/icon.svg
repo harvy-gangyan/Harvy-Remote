@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="50%" stop-color="#090d16" />
+      <stop offset="100%" stop-color="#020617" />
+    </linearGradient>
+    <linearGradient id="chassis" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <linearGradient id="cyanGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#06b6d4" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Full Background -->
+  <rect width="512" height="512" rx="112" fill="url(#bg)" />
+
+  <!-- Outer Border Ring -->
+  <rect x="16" y="16" width="480" height="480" rx="96" fill="none" stroke="#334155" stroke-width="4" opacity="0.6" />
+
+  <!-- Remote Silhouette -->
+  <rect x="136" y="56" width="240" height="400" rx="48" fill="url(#chassis)" stroke="#38bdf8" stroke-width="6" stroke-opacity="0.5" filter="drop-shadow(0 20px 30px rgba(0,0,0,0.8))" />
+
+  <!-- Top IR Emitter -->
+  <rect x="226" y="72" width="60" height="10" rx="5" fill="#38bdf8" filter="url(#glow)" />
+
+  <!-- Brand Label -->
+  <text x="256" y="112" fill="#94a3b8" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="800" letter-spacing="3" text-anchor="middle">HARVY TV REMOTE</text>
+
+  <!-- Power Button -->
+  <circle cx="180" cy="152" r="22" fill="#ef4444" />
+  <path d="M180 142 v10 M174 146 a8 8 0 1 0 12 0" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" />
+
+  <!-- USB / Input Button -->
+  <rect x="236" y="132" width="40" height="40" rx="10" fill="#334155" />
+  <rect x="248" y="144" width="16" height="16" rx="3" fill="#38bdf8" />
+
+  <!-- Mute Button -->
+  <circle cx="332" cy="152" r="22" fill="#334155" />
+  <path d="M326 148 h4 l5 -4 v16 l-5 -4 h-4 z" fill="#94a3b8" />
+
+  <!-- D-Pad Directional Ring -->
+  <circle cx="256" cy="270" r="76" fill="#1e293b" stroke="#475569" stroke-width="4" />
+  
+  <!-- D-Pad Arrows -->
+  <path d="M256 208 l-8 10 h16 z" fill="#38bdf8" />
+  <path d="M256 332 l-8 -10 h16 z" fill="#94a3b8" />
+  <path d="M194 270 l10 -8 v16 z" fill="#94a3b8" />
+  <path d="M318 270 l-10 -8 v16 z" fill="#94a3b8" />
+
+  <!-- OK Center Button -->
+  <circle cx="256" cy="270" r="34" fill="url(#cyanGlow)" filter="url(#glow)" />
+  <text x="256" y="276" fill="#090d16" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="900" text-anchor="middle">OK</text>
+
+  <!-- Navigation Bar (Back, Home, Menu) -->
+  <circle cx="184" cy="386" r="18" fill="#1e293b" stroke="#475569" stroke-width="2" />
+  <path d="M188 382 l-6 4 l6 4" fill="none" stroke="#38bdf8" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+
+  <circle cx="256" cy="386" r="20" fill="#1e293b" stroke="#38bdf8" stroke-width="2.5" />
+  <path d="M256 378 l-8 7 h3 v7 h10 v-7 h3 z" fill="#38bdf8" />
+
+  <circle cx="328" cy="386" r="18" fill="#1e293b" stroke="#475569" stroke-width="2" />
+  <path d="M322 381 h12 M322 386 h12 M322 391 h12" fill="none" stroke="#94a3b8" stroke-width="2" stroke-linecap="round" />
+</svg>
